@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>This is the blog</h1>
+        <ul>
+          {% if user.is_authenticated %}
+            <a href="{% url 'WebView' %}"></a>
+            <li>
+              <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit">Logout</button>
+              </form>
+            </li>
+          {% else %}
+            <li>
+              <a href="{% url 'login' %}">Login</a>
+            </li>
+            <li>
+              <a href="{% url 'signup' %}">Sign Up</a>
+          {% endif %}
+        </ul>
+    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+{% endblock content %}
