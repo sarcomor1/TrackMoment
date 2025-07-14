@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     #local
     'trackmoment',
     'account',
+    'data',
 ]
 
 MIDDLEWARE = [
