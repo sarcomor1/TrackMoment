@@ -18,5 +18,7 @@ class CreateViewProfile(UpdateView):
     success_url = reverse_lazy('WebView')
     template_name = 'profile.html'
     
+    
     def get_object(self, queryset = None):
         return self.request.user
+    
