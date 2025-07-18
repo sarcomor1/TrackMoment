@@ -1,3 +1,3 @@
 # TRACKMOMENT
-type `docker-compose up --build` in the project directory
+type `docker-compose up --build` in the project directory 
 
