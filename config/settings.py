@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'trackmoment',
     'account',
     'user',
+    'activity',
 ]
 AUTH_USER_MODEL = 'user.User'
 
