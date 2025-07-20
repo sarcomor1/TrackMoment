@@ -7,5 +7,5 @@ User = get_user_model()
 class ActivityForms(forms.ModelForm):
     class Meta:
         model = Activity
-        fields = ['activity_id', 'user', 'location']
+        fields = ['activity_id', 'user_id', 'activity_type', 'activity_details', 'image', 'location', 'url', 'create_at', 'activity_date' ]
         
