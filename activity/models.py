@@ -1,12 +1,11 @@
 from django.db import models
 from django.conf import settings
-from datetime import date
 
 
 ACTIVITY_CHOICES = [
-    ('Playing', 'Playing'),
-    ('TV', 'TV'),
-    ('Shopping', 'Shopping'),
+    ('1', 'Playing'),
+    ('2', 'TV'),
+    ('3', 'Shopping'),
 ]
 
 class Activity(models.Model):
@@ -17,5 +16,6 @@ class Activity(models.Model):
     image = models.ImageField(upload_to= 'photo/%Y/%m/%d')
     location = models.TextField(null=True, blank=True)
     url = models.TextField(null=True, blank=True)
-    create_at =  models.DateField(default=date.today)
+    create_at =  models.DateField(auto_now_add=True)
     activity_date = models.DateTimeField()
+    

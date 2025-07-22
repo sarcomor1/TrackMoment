@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'account',
     'user',
     'activity',
+    'integration',
 ]
 AUTH_USER_MODEL = 'user.User'
 
