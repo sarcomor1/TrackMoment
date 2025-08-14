@@ -1,7 +1,8 @@
-FROM python:3.10-slim
+FROM python:3.12-slim
 WORKDIR /app
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY wheelhouse/ ./wheelhouse/
+RUN pip install --no-cache-dir --no-index --find-links=wheelhouse -r requirements.txt
 COPY . .
 RUN chmod +x wait-for-it.sh
 RUN chmod +x entrypoint_migrate.sh

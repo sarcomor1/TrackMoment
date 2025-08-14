@@ -1,4 +1,7 @@
-python3 -m venv .venv
-source .venv/bin/activate
+#!/bin/bash
+set -e  # توقف در صورت خطا
+
+echo "📦 نصب پکیج‌ها..."
 pip install --no-index --find-links=wheelhouse -r requirements.txt
-echo "good!   installed requirements "
+echo "✅ پکیج‌ها با موفقیت نصب شدند."
+

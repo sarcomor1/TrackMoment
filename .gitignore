@@ -134,8 +134,13 @@ GitHub.sublime-settings
 .vscode/* 
 !.vscode/settings.json 
 !.vscode/tasks.json 
-!.vscode/launch.json 
+!.vscode/launch.json  
 !.vscode/extensions.json 
 .history
 .venv
 .envrc
+import_requirements.sh
+install_images.sh
+postgres15.tar
+python_3.12_slim.tar
+wheelhouse
